@@ -24,7 +24,6 @@ public class DialogueHandler : MonoBehaviour
        
    }
 
-   //au moment ou on lance le dialogue avec le minion
    public void startDialogue(CharacterInfo characterInfo)
    {
        UIManager.Instance.dialogueBoxText.text = "";
@@ -53,7 +52,6 @@ public class DialogueHandler : MonoBehaviour
                UIManager.Instance.gameObject.SetActive(false);
                Player.instance.canMove = true;
                Player.instance.canInteract = true;
-               Player.instance.SetMinionCount(Player.instance.minionsCount + 1);
                break;
            default:
                break;

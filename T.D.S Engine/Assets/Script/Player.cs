@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 
-public class Player
+public class Player : MonoBehaviour
 {
     public static Player instance = null;
 
@@ -27,7 +27,5 @@ public class Player
             return;
         }
         instance = this;
-
-        animationPlayer = GetComponent<AnimationPlayer>();
     }
 }
